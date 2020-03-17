@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCGE Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://use.fontawesome.com/1cdb6c68ea.js"></script>
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="icon" href="src/img/doctor.ico" />
+
+</head>
+
+<body>
+    <nav>
+        <span style="position: absolute; left: 2vh; color: black; font-size: 2.6vh;">Hi
+            , <span>ManamaBContracting</span></span>
+        <h1 style="color: brown;">BCGE <span style="color: red;">Clicks</span></h1>
+        <div class="dropdown3">
+            <a href="#" class="searching-button"><img class="nav-icon" src="src/img/magnify-glass.svg" alt="" /></a>
+
+
+        </div>
+
+        <div class="nav-images">
+            <!--<a href="#" class="nav-logos"><img src="src/img/settings.png" alt="" /></a>
+            <a href="#" class="nav-logos"><img src="src/img/notification.png" alt="" /></a>
+            <a href="# " class="nav-logos"><img src="src/img/user.png " alt=" " /></a>-->
+            <div class="sets">
+                <a href="login.html" class="nav-logos">Logout</a>
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+            <div class="sets" style="margin-left: 2vh;">
+                <a href="#" class="nav-logos">MailBox</a>
+                <i class="fas fa-envelope-square"></i>
+            </div>
+
+        </div>
+    </nav>
+    <div class="sidebar">
+        <a href="dashboard.html"><i class="fas fa-database"></i>My Dashboard</a>
+        <a href="layout.html" class="activesidebar"><i class="fas fa-file-invoice"></i>MyAccounts</a>
+        <a href="applyinvest.html"><i class="fas fa-pen"></i>Apply & Invest</a>
+        <a href="rewards.html"><i class="fas fa-gift"></i>Rewards</a>
+        <a href="#service" onclick="disalert()"><i class="fas fa-running"></i>Youth Service</a>
+        <a href="services.html"><i class="fas fa-briefcase"></i>Services</a>
+        <a href=""><i class="fas fa-wallet"></i>Pay & Transfer</a>
+        <a href=""><i class="fas fa-plus"></i>TopUp</a>
+        <a href="#contact"><i class="fas fa-star"></i>Handy Tips</a>
+    </div>
+    <div class="main">
+        <h1 style="font-weight: 500;">My Accounts Overview</h1>
+
+        <div class="infoWrapper">
+            <div class="deposite">
+                <div class="left">
+                    <i class="fas fa-box"></i>
+                    <h3>Deposites</h3>
+                </div>
+
+
+                <div class="balance">
+                    <p id="tb">Total balance</p>
+                    <p id="am"><span>USD</span> 40,000,000.00</p>
+
+                </div>
+            </div>
+            <div class="infoWrapper">
+                <div class="deposite">
+                    <div class="left">
+                        <p>Current/Savings</p>
+                        <span id="lu">Last updated 2days ago</span>
+                    </div>
+
+
+                    <div class="balance2">
+                        <p id="cb">Current balance</p>
+                        <p id="cam"><span>USD</span> 40,000,000.00</p>
+
+                    </div>
+                </div>
+                <br>
+                <div class="creditcards">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Credit cards</h3>
+                    <button data-toggle="collapse" data-target="#creditcard">&#9660;</button>
+
+                </div>
+
+
+
+                <div id="creditcard" class="collapse">
+
+                    <div class="wrapcard">
+                        <div class="up">
+                            <p>Already have a BCGE Card?</p>
+                            <a href="">Link card now</a>
+                        </div>
+
+                        <div class="down">
+                            <p>No BCGE Card?</p>
+                            <a href="">Apply for one now</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <br>
+                <div class="loans">
+                    <i class="fas fa-donate"></i>
+                    <h3>Loans</h3>
+                    <button data-toggle="collapse" data-target="#loandrop">&#9660;</button>
+                </div>
+
+                <div id="loandrop" class="collapse">
+                    <p>You do not have a BCGE Loan Yet? <a href="">Apply for one now</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="src/js/loggedin.js"></script>
+        <script>
+            function disalert() {
+                alert("Youth Service is not Avilable right now.");
+            }
+        </script>
+</body>
+
+</html>
